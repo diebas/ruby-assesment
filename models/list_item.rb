@@ -6,11 +6,11 @@ class ListItem
     @quantity = quantity
   end
 
-  def toal_tax
-    item.total_tax * quantity
+  def total_tax
+    (item.total_tax * quantity).round(2)
   end
 
   def total
-    item.total * quantity
+    (item.total * quantity).round(2)
   end
 end

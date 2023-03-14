@@ -17,10 +17,12 @@ class Item
   end
 
   def total_tax
-    basic_tax + import_tax
+    total_tax = basic_tax + import_tax
+    rounded_tax = (total_tax / 0.05).ceil * 0.05
+    rounded_tax.round(2)
   end
 
   def total
-    price + total_tax
+    (price + total_tax).round(2)
   end
 end
