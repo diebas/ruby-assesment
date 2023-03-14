@@ -13,4 +13,8 @@ class ListItem
   def total
     (item.total * quantity).round(2)
   end
+
+  def print
+    "#{quantity} #{item.name} at #{total}"
+  end
 end
