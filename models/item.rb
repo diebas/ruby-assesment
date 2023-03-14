@@ -1,14 +1,14 @@
-Class Item
+class Item
   attr_accessor :name, :price, :pays_basic_tax, :imported
 
-  def Initialize(name, price, pays_basic_tax, imported)
+  def initialize(name, price, pays_basic_tax, imported)
     @name = name
     @price = price
     @pays_basic_tax = pays_basic_tax
     @imported = imported
   end
 
-  def basic_tax 
+  def basic_tax
     pays_basic_tax ? price * 0.1 : 0
   end
 
