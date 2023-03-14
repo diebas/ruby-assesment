@@ -3,7 +3,7 @@ require 'byebug'
 require_relative '../../models/item'
 
 RSpec.describe Item do
-  subject(:item) { Item.new("Item", price, pays_basic_tax, imported) }
+  subject(:item) { Item.new('Item', price, pays_basic_tax, imported) }
 
   let(:price) { 20 }
   let(:imported) { true }
@@ -52,7 +52,7 @@ RSpec.describe Item do
     end
   end
 
-  describe "#total" do
+  describe '#total' do
     it 'returns the sum of price and total taxes' do
       expect(item.total).to eq(23)
     end

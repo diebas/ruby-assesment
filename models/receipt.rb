@@ -16,4 +16,10 @@ class Receipt
   def total
     list_items.sum(&:total)
   end
+
+  def print_receipt
+    list_items.each { |list_item| puts list_item.print }
+    puts "Sales Tax: #{sales_tax}"
+    puts "Total: #{total}"
+  end
 end
