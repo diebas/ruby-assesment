@@ -32,11 +32,11 @@ RSpec.describe ListItem do
   describe '#print' do
     it 'returns the total_tax for the quantity of the item' do
       list_item = ListItem.new(book, 1)
-      expect(list_item.print).to eq('1 book at 12.49')
+      expect(list_item.print).to eq('1 book: 12.49')
       list_item = ListItem.new(music_cd, 2)
-      expect(list_item.print).to eq('2 music CD at 34.48')
+      expect(list_item.print).to eq('2 music CD: 34.48')
       list_item = ListItem.new(chocolate_bar, 3)
-      expect(list_item.print).to eq('3 imported chocolate bar at 2.7')
+      expect(list_item.print).to eq('3 imported chocolate bar: 2.70')
     end
   end
 end

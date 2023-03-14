@@ -15,6 +15,6 @@ class ListItem
   end
 
   def print
-    "#{quantity} #{item.name} at #{total}"
+    "#{quantity} #{item.name}: #{'%.2f' % total}"
   end
 end
