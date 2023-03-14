@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Receipt
   attr_accessor :list_items
 

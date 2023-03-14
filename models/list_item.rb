@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ListItem
   attr_accessor :item, :quantity
 
