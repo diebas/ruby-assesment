@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Item
   attr_accessor :name, :price, :pays_basic_tax, :imported
 
